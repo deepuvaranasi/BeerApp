@@ -1,4 +1,4 @@
-import { getRandomBeerList } from '../../api';
+import { getRandomBeerList, searchBeerList } from '../../api';
 import { Beer } from '../../types';
 import handle from '../../utils/error';
 
@@ -12,5 +12,17 @@ const fetchData = (setData: (data: Array<Beer>) => void) => {
     }
   })();
 };
+const getSearchBeerList = (setData: (data: Array<Beer>) => void, query: string) => {
+  (async () => {
+    try {
+      const { data } = await searchBeerList(query);
+      setData(data);
+    } catch (error) {
+      handle(error);
+    }
+  })();
+};
 
-export { fetchData };
+
+export { fetchData,getSearchBeerList };
+

@@ -17,9 +17,30 @@ const Beer = () => {
           <h1>{beer?.name}</h1>
         </header>
         <main>
-          <span>
+          <div>
+            <b>Name: </b> {beer?.name}
+          </div>
+          <div>
             <b>Type: </b> {beer?.brewery_type}
-          </span>
+          </div>
+          <div>
+            <b>Phone: </b> {beer?.phone}
+          </div>
+          <div>
+            <b>Postal Code: </b> {beer?.postal_code}
+          </div>
+          <div>
+            <b>State: </b> {beer?.state}
+          </div>
+          <div>
+            <b>City: </b> {beer?.city}
+          </div>
+          <div>
+            <b>Street: </b> {beer?.street}
+          </div>
+          <div>
+            <b>Address 1: </b> {beer?.address_1}
+          </div>
         </main>
       </section>
     </article>

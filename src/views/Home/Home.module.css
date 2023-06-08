@@ -1,11 +1,14 @@
 .list {
   list-style: none;
+  font-size: larger;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color:  #000080;
 }
-
 .listContainer {
   padding: 20px;
   margin-bottom: 20px;
-  background: #fff;
+  background: #c6cbe2;
+  border-radius: 5px
 }
 
 .listHeader {
